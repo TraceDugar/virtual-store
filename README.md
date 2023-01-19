@@ -4,21 +4,29 @@
 
 ## Collaborators
 
- - Hunter Fehr
+- Hunter Fehr
 
- ## Description
+## Description
 
- ## Links and Resources
+## Links and Resources
 
  [Github Repository](https://github.com/TraceDugar/virtual-store)
 [Live Site](https://virtual-store-traced.onrender.com)
 
- ### Running the application
+### Running the application
 
-  - `npm start`
+- `npm start`
 
-  ### Features and Routes
+### Features and Routes
 
-  #### Tests
+- Feature 1: Add categories that hold products.
+- Feature 2: Add Products within catgories.
+- Feature 3: Add Cart
 
-  #### UML / Diagrams
+#### Tests
+
+  Jest --coverage --verbose
+
+  `npm test`
+
+#### UML / Diagrams
