@@ -3,7 +3,7 @@ const Footer = () => {
 
   return(
     <>
-    <p>&copy; T. Dugar 2023</p>
+    <p data-testid="footer">&copy; T. Dugar 2023</p>
     </>
   )
 };

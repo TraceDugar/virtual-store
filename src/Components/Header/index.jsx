@@ -3,7 +3,7 @@ const Header = () => {
 
   return (
     <>
-      <h1>Store Name</h1>
+      <h1 data-testid="header">Store Name</h1>
     </>
   )
 };
