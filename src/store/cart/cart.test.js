@@ -16,8 +16,11 @@ describe('Cart reducer', () => {
   });
 
   it('adds products and removes products', () => {
-    let productOne = {name: 'product one', price: 5}
-    let productTwo = {name: 'product two', price: 15}
+    let state = store.getState();
+    let productOne = { name: 'product one', price: 5 }
+    let productTwo = { name: 'product two', price: 15 }
+    expect(state.cart.length).toEqual(0);
+    expect(state.cart).toBeTruthy();
 
     store.dispatch(addItem(productOne));
     store.dispatch(addItem(productTwo));

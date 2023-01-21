@@ -3,7 +3,7 @@ import { Button, Card } from '@mui/material';
 import { addItem } from '../../store/actions';
 
 const Products = () => {
-  const { dispatch } = useDispatch();
+  const dispatch  = useDispatch();
   const { products } = useSelector(state => state);
   const { activeCategory } = useSelector(state => state.category);
 
@@ -12,7 +12,7 @@ const Products = () => {
       {activeCategory && products.map((product, index) => (
         <Card data-testid={`product-${index}`} key={`product-${index}`} variant='outlined'>
           {product.name}
-          <Button variant="text" onClick={() => dispatch(addItem(product))}>X</Button>
+          <Button variant="text" onClick={() => dispatch(addItem(product))}>Add Item</Button>
         </Card>
       ))}
     </>

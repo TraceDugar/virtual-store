@@ -2,8 +2,7 @@ import { Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { removeItem } from "../../store/actions";
 
-
-const SimpleCart = () => {
+const Cart = () => {
   const dispatch = useDispatch()
   const { cart } = useSelector(state => state);
 
@@ -18,5 +17,4 @@ const SimpleCart = () => {
   )
 }
 
-
-export default SimpleCart;
+export default Cart;
