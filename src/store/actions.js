@@ -1,6 +1,6 @@
 export const selectCategory = (category) => {
   return {
-    type: 'SELECT_CATEGORY ',
+    type: 'SELECT_CATEGORY',
     payload: category,
   }
 };
@@ -15,13 +15,13 @@ export const reset = () => {
 export const addItem = (product) => {
   return {
     type: 'ADD',
-    payload: product
+    payload: product,
   }
 };
 
 export const removeItem = (product) => {
   return {
     type: 'REMOVE',
-    payload: product
+    payload: product,
   }
 };
