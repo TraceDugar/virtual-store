@@ -1,9 +1,13 @@
+import './styles.scss';
 
 const Footer = () => {
 
-  return(
+  return (
     <>
-    <p data-testid="footer">&copy; T. Dugar 2023</p>
+      <footer>
+        <p className="top-footer" data-testid="footer">&copy; T. Dugar 2023</p>
+        <p className="bottom-footer">React + Redux + Material UI</p>
+      </footer>
     </>
   )
 };
