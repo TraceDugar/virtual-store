@@ -20,6 +20,10 @@ const Categories = () => {
           <Button data-testid={`category-${index}`} key={`category-${index}`} onClick={() => dispatch(selectCategory(category.name))}>{category.name}</Button>
         ))}
       </ButtonGroup>
+      <h2>
+        {`${categories.name}`}
+      </h2>
+      <h4>Category description goes here</h4>
     </>
   )
 };
