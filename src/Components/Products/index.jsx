@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, Card } from '@mui/material';
+import { Button, Card, CardActions, CardMedia, Typography } from '@mui/material';
 import { addItem } from '../../store/cart';
 import { adjustInventory, getProducts } from '../../store/products';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './styles.scss';
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -24,14 +25,25 @@ const Products = () => {
 
   return (
     <>
-      {activeCategory && renderList.map((product, index) => (
-        <Card data-testid={`product-${index}`} key={`product-${index}`} variant='outlined'>
-          {product.name}
-          <img alt={product.name} src={`https://source.unsplash.com/random?${product.name}`} />
-          <Button variant="text" onClick={() => handler(product)}>Add Item</Button>
-          <Button component={Link} to={`/product/${product._id}`} variant="text">View Details</Button>
-        </Card>
-      ))}
+      <div className='card-container'>
+        {activeCategory && renderList.map((product, index) => (
+          <Card sx={{ maxWidth: 145 }}>
+            <CardMedia
+              component='img'
+              alt='product'
+              height='70'
+              image={`https://source.unsplash.com/random?${product.name}`}
+            />
+            <Typography textAlign='left' textSize='0.5vw' paddingLeft='1vw' paddingTop='1vh'>
+              {product.name}
+            </Typography>
+            <CardActions textSize="10px">
+              <Button style={{ textSize: '1vw' }} variant="text" onClick={() => handler(product)}>Add Item</Button>
+              <Button size='small' component={Link} to={`/product/${product._id}`} variant="text">View Details</Button>
+            </CardActions>
+          </Card>
+        ))}
+      </div>
     </>
   )
 };
