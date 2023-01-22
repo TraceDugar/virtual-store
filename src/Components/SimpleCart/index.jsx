@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { removeItem } from "../../store/actions";
+import { removeItem } from "../../store/cart";
 import { When } from 'react-if';
 import './styles.scss';
 
