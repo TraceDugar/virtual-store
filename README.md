@@ -24,6 +24,10 @@
 - Feature 3: Add Cart.
 - Feature 4: Connect to database for products and categories.
 - Feature 5: Updates Inventory for the cart.
+- Feature 6: Add cart page.
+- Feature 7: Add product description page.
+- Feature 8: Add Page Router.
+- Feature 9: Add Image Generator for products in Categories and Description page.
 
 #### Tests
 
