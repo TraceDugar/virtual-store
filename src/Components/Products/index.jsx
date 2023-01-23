@@ -37,9 +37,9 @@ const Products = () => {
             <Typography textAlign='left' textSize='0.5vw' paddingLeft='1vw' paddingTop='1vh'>
               {product.name}
             </Typography>
-            <CardActions textSize="10px">
-              <Button style={{ textSize: '1vw' }} variant="text" onClick={() => handler(product)}>Add Item</Button>
-              <Button size='small' component={Link} to={`/product/${product._id}`} variant="text">View Details</Button>
+            <CardActions >
+              <Button className='button-1' variant="text" onClick={() => handler(product)}>Add Item</Button>
+              <Button className='details-link' component={Link} to={`/product/${product._id}`} variant="text">View Details</Button>
             </CardActions>
           </Card>
         ))}
