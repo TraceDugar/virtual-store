@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { Button, ButtonGroup } from '@mui/material';
+import { Button } from '@mui/material';
 import './styles.scss'
 
 const Header = () => {
