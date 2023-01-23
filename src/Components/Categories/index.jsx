@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCategories, selectCategory } from '../../store/categories';
 import { Button, ButtonGroup } from '@mui/material';
 import { useEffect } from 'react';
+import './styles.scss';
 
 const Categories = () => {
   const dispatch = useDispatch();
@@ -15,15 +16,12 @@ const Categories = () => {
 
   return (
     <>
-      <ButtonGroup variant='text' aria-label='text button group'>
+    <h4 className='categories'>Browse our Categories</h4>
+      <ButtonGroup className='categories-buttons' variant='text' aria-label='text button group'>
         {categories.map((category, index) => (
           <Button data-testid={`category-${index}`} key={`category-${index}`} onClick={() => dispatch(selectCategory(category.name))}>{category.name}</Button>
         ))}
       </ButtonGroup>
-      <h2>
-        {`${categories.name}`}
-      </h2>
-      <h4>Category description goes here</h4>
     </>
   )
 };
