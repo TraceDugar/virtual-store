@@ -5,20 +5,20 @@ const ShoppingCart = () => {
   return (
     <>
       <Card className="cart-card">
-        <CardContent>
-          <Typography>
-            Order Summary
+        <CardContent className="order-data">
+          <Typography  variant="h6">
+            Order Summary:
           </Typography>
-          <Typography variant="p" component="div">
-            total
+          <Typography variant="subtitle1" component="div">
+            total:
           </Typography>
         </CardContent>
         <CardContent className="form-wrapper">
           <CardContent>
-            <Typography className="billing-details">
-              Billing Address
-            </Typography>
             <div className="billing-fields">
+              <Typography className="billing-details" variant="h6">
+                Billing Address
+              </Typography>
               <TextField className="text-field" size="small" id="standard-basic" label="Full Name" variant="standard" />
               <TextField disabled className="text-field" size="small" id="standard-basic" label="Address" variant="standard" />
               <TextField disabled className="text-field" size="small" id="standard-basic" label="City" variant="standard" />
@@ -26,9 +26,9 @@ const ShoppingCart = () => {
               <TextField disabled className="text-field" size="small" id="standard-basic" label="Zip" variant="standard" />
             </div>
           </CardContent>
-          <CardContent className="payment-details">
+          <CardContent className="payment-details" variant="subtitle1">
             <div className="right-column">
-              <Typography>
+              <Typography variant="h6">
                 Payment Details
               </Typography>
             </div>

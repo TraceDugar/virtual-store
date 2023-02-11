@@ -10,7 +10,7 @@
 
 ## Links and Resources
 
- [Github Repository](https://github.com/TraceDugar/virtual-store)
+[Github Repository](https://github.com/TraceDugar/virtual-store)
 [Live Site](https://virtual-store-traced.onrender.com)
 
 ### Running the application
@@ -28,6 +28,9 @@
 - Feature 7: Add product description page.
 - Feature 8: Add Page Router.
 - Feature 9: Add Image Generator for products in Categories and Description page.
+- Feature 10: Add Accordion for Specs, and reviews.
+- Feature 11: Add Suggestions for like items.
+- Feature 12: Responsive Design for portrait and Land Scape orientation.
 
 #### Tests
 
