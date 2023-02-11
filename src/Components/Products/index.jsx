@@ -27,19 +27,19 @@ const Products = () => {
     <>
       <div className='card-container'>
         {activeCategory && renderList.map((product, index) => (
-          <Card sx={{ maxWidth: 145 }}>
+          <Card sx={{ width: 200, height: 300 }}>
             <CardMedia
               component='img'
               alt='product'
-              height='70'
+              height='170'
               image={`https://source.unsplash.com/random?${product.name}`}
             />
-            <Typography textAlign='left' textSize='0.5vw' paddingLeft='1vw' paddingTop='1vh'>
+            <Typography className='product-name'>
               {product.name}
             </Typography>
-            <CardActions >
-              <Button className='button-1' variant="text" onClick={() => handler(product)}>Add Item</Button>
-              <Button className='details-link' component={Link} to={`/product/${product._id}`} variant="text">View Details</Button>
+            <CardActions className='links'>
+              <Button className='button-1' variant="text" size="small" onClick={() => handler(product)}>Add Item</Button>
+              <Button className='details-link' component={Link} size="small" to={`/product/${product._id}`} variant="text">Details</Button>
             </CardActions>
           </Card>
         ))}

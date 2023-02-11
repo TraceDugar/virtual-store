@@ -1,10 +1,45 @@
 .card-container {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 28.5vw;
   display: flex;
-  justify-content: flex-start;
-  margin-left: 25vw;
-  gap: 2vw;
+  gap: 10vw;
 }
 
-.details-link {
-  size: 0.4vh;
+.product-name {
+  text-align: left;
+  font-size: 2vw;
+  padding-left: 1.5vw;
+  padding-top: 2.5vh;
+  font-weight: bolder ;
+}
+
+.links {
+  margin-top: 6vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (orientation: portrait) {
+  .card-container {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 15vw;
+    display: flex;
+    gap: 10vw;
+  }
+
+  .product-name {
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-top: 1.25vh;
+    font-weight: bolder ;
+  }
+  
+  .links {
+    margin-top: 3.5vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

@@ -5,14 +5,15 @@
 }
 
 .card {
-  margin-left: 36%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1%;
 }
 
 .card-words {
   display: flex;
   justify-content: space-between;
-  margin-top: -4%;
+  margin-top: 1%;
 }
 
 .card-stock {
@@ -26,35 +27,35 @@
 
 .buy-button {
   font-size: 1.5vh;
-  left: 36%;
+  left: 35%;
   width: 29.25vw;
   height: 4.5vh;
   margin-bottom: 1%;
 }
 
 .related-items {
-  margin-top: 1%;
-  margin-left: 36%;
+  padding-top: 1%;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin-bottom: 1%;
 }
 
 .suggestions {
-  margin-left: 36%;
+  margin-left: 35%;
   display: flex;
 }
 
 .suggestions-card {
   width: 7.65vw;
-  padding:  1.65%;
+  padding: 1.65%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: .4rem;
+  font-size: .5rem;
 }
 
 .product-details {
-  margin-top: 1%;
-  margin-left: 36%;
+  padding-top: 1%;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
@@ -62,7 +63,82 @@
 .accordion {
   margin-top: 2vh;
   width: 29.5vw;
-  margin-left: 36%;
+  margin-left: 35%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: .5rem;
+}
+
+@media (orientation: portrait) {
+  .title {
+    margin-top: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  .card {
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+  }
+  
+  .card-words {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+  
+  .card-stock {
+    color: rgb(118, 118, 118);
+    font-size: 2.5vh;
+  }
+  
+  .card-price {
+    font-size: 2.5vh;
+  }
+  
+  .buy-button {
+    top: 1vh;
+    font-size: 1.5vh;
+    left: 35vw;
+    width: 29.25vw;
+    height: 2vh;
+  }
+  
+  .related-items {
+    padding-top: 2%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1%;
+  }
+  
+  .suggestions {
+    margin-left: 35%;
+    display: flex;
+  }
+  
+  .suggestions-card {
+    width: 7.65vw;
+    padding: 1.65%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .5rem;
+  }
+  
+  .product-details {
+    padding-top: 1%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+  }
+  
+  .accordion {
+    margin-top: 2vh;
+    width: 29.5vw;
+    margin-left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .5rem;
+  }
+  
 }

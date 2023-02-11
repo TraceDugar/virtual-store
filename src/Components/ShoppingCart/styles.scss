@@ -1,8 +1,16 @@
 .cart-card {
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
   width: 50vw;
   height: 80vh;
-  margin-left: 25%;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.order-data {
+  margin-top: .5vh;
+  margin-left: 2.6vw;
 }
 
 .text-field {
@@ -11,8 +19,12 @@
   height: 6vh;
 }
 
+.billing-fields {
+  margin-left: 1.4vw;
+}
+
 .payment-details {
-  margin-right: 1.5vh;
+  margin-right: 1.4vw;
 }
 
 .right-column {
@@ -20,13 +32,12 @@
 }
 
 .form-wrapper {
+  margin-top: 2vh;
   display: flex;
 }
 
-.place-order {
-  margin-bottom: px;
-}
-
-.button{
-margin-left: 32%;
+.button {
+  margin-top: 6vh;
+  margin-left: auto;
+  margin-right: auto;
 }
