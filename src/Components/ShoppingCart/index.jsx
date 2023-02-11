@@ -7,7 +7,7 @@ const ShoppingCart = () => {
       <Card className="cart-card">
         <CardContent className="order-data">
           <Typography  variant="h6">
-            Order Summary:
+            Order Summary
           </Typography>
           <Typography variant="subtitle1" component="div">
             total:
@@ -16,7 +16,7 @@ const ShoppingCart = () => {
         <CardContent className="form-wrapper">
           <CardContent>
             <div className="billing-fields">
-              <Typography className="billing-details" variant="h6">
+              <Typography className="billing-details" >
                 Billing Address
               </Typography>
               <TextField className="text-field" size="small" id="standard-basic" label="Full Name" variant="standard" />
@@ -28,7 +28,7 @@ const ShoppingCart = () => {
           </CardContent>
           <CardContent className="payment-details" variant="subtitle1">
             <div className="right-column">
-              <Typography variant="h6">
+              <Typography>
                 Payment Details
               </Typography>
             </div>

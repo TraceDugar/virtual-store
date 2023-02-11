@@ -1,15 +1,15 @@
 .cart-card {
-  margin-top: 2vh;
+  margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2vh;
   width: 50vw;
-  height: 80vh;
+  height: 75vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .order-data {
-  margin-top: .5vh;
+  margin-top: 1vh;
   margin-left: 2.6vw;
 }
 
@@ -37,7 +37,55 @@
 }
 
 .button {
-  margin-top: 6vh;
+  margin-top: 2vh;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (orientation: portrait) {
+  .cart-card {
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    width: 67vw;
+    height: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .order-data {
+    margin-top: 1vh;
+    margin-left: 2.6vw;
+  }
+  
+  .text-field {
+    margin: auto;
+    width: 20vw;
+    height: 6vh;
+  }
+  
+  .billing-fields {
+    margin-top: 5vh;
+    margin-left: 4vw;
+  }
+  
+  .payment-details {
+    margin-top: 5vh;
+    margin-right: 4vw;
+  }
+  
+  .right-column {
+    margin-bottom: 1vh;
+  }
+  
+  .form-wrapper {
+    margin-top: 2vh;
+    display: flex;
+  }
+  
+  .button {
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
