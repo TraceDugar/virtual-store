@@ -2,13 +2,13 @@ $background: #f5f5f5;
 
 footer {
   background-color: #e6e6e6;
-  padding: 15px;
-  padding-bottom: 20px;
-  margin-left: -10px;
-  margin-right: -10px;
-  position: static;
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
   height: 50px;
-  margin-top: 12vh;
+  width: 100%;
+  padding: 15px;
 }
 
 .top-footer {
@@ -26,14 +26,16 @@ footer {
 
 @media (orientation: portrait) {
   footer {
+    position: absolute;
+    bottom:1px;
     background-color: #e6e6e6;
     padding: 15px;
-    padding-bottom: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
-    position: static;
+    position:fixed;
+    left:0;
+    bottom:0;
+    right:0;
     height: 50px;
-    margin-top: 47vh;
+    width: 96.925%;
   }
 
   .top-footer {
