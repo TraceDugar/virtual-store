@@ -1,6 +1,5 @@
 import Categories from "../Categories";
 import Products from "../Products";
-import SimpleCart from "../SimpleCart";
 import './styles.scss';
 
 const StoreFront = () => {
@@ -8,7 +7,6 @@ const StoreFront = () => {
     <>
       <Categories />
       <Products />
-      <SimpleCart />
     </>
   )
 }
