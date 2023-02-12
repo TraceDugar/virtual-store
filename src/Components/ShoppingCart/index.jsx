@@ -1,13 +1,32 @@
 import { Card, CardContent, CardActions, Button, TextField, Typography } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { removeItem } from "../../store/cart";
+import { When } from 'react-if';
 import './styles.scss';
 
 const ShoppingCart = () => {
+  const dispatch = useDispatch()
+  const { cart } = useSelector(state => state);
+
   return (
     <>
       <Card className="cart-card">
         <CardContent className="order-data">
-          <Typography  variant="h6">
+          <Typography variant="h6">
             Order Summary
+          </Typography>
+          <Typography>
+            <When condition={cart.length > 0}>
+              <div className="simple-cart">
+                <ul>
+                  {cart.map((product, index) => (
+                    <li key={`cart-${index}`}>{product.name}
+                      <Button onClick={() => dispatch(removeItem(product))}>Remove</Button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </When>
           </Typography>
           <Typography variant="subtitle1" component="div">
             total:

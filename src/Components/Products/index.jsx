@@ -13,8 +13,7 @@ const Products = () => {
 
   useEffect(() => {
     dispatch(getProducts());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dispatch]);
 
   const renderList = products.filter(product => product.category === activeCategory);
 
