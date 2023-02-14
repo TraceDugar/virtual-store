@@ -1,4 +1,6 @@
-import { Card, CardContent, CardActions, Button, TextField, Typography } from "@mui/material";
+import * as React from 'react';
+import { Card, CardContent, CardActions, Button, TextField, Typography, Popper } from "@mui/material";
+import { Box } from '@mui/material';
 import { useDispatch, useSelector } from "react-redux";
 import { removeItem } from "../../store/cart";
 import { When } from 'react-if';
@@ -7,6 +9,15 @@ import './styles.scss';
 const ShoppingCart = () => {
   const dispatch = useDispatch()
   const { cart } = useSelector(state => state);
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popper' : undefined;
 
   return (
     <>
@@ -21,7 +32,8 @@ const ShoppingCart = () => {
                 <ul>
                   {cart.map((product, index) => (
                     <li key={`cart-${index}`}>{product.name}
-                      <Button onClick={() => dispatch(removeItem(product))}>Remove</Button>
+                      {` $${product.price}`}
+                      <Button className="delete-item" color='error' onClick={() => dispatch(removeItem(product))}>Remove</Button>
                     </li>
                   ))}
                 </ul>
@@ -69,7 +81,12 @@ const ShoppingCart = () => {
         </CardContent>
         <CardActions>
           <div className="button">
-            <Button className="place-order" size="small" variant='contained' >Place Your Order</Button>
+            <Button className="place-order" color="success" size="small" variant='contained' onClick={handleClick} >Place Your Order</Button>
+            <Popper id={id} open={open} anchorEl={anchorEl}>
+              <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper' }}>
+                Your order has been simulated!
+              </Box>
+            </Popper>
           </div>
         </CardActions>
       </Card>

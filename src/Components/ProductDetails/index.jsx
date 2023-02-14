@@ -25,7 +25,7 @@ const ProductDetails = () => {
 
   return (
     <>
-      {theProduct && <h1 className="title" >{product.name}</h1>}
+      {theProduct && <h1 className="title" >{theProduct.name}</h1>}
       <Card className="card" sx={{ maxWidth: 280 }}>
         <CardActionArea>
           <CardMedia
