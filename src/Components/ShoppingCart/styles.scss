@@ -13,6 +13,30 @@
   margin-left: 2.6vw;
 }
 
+.delete-item {
+  position: right;
+  left:  auto;
+  right: auto;
+}
+
+ul {
+  height: 12vh;
+  background-color:white;
+  overflow-y:auto;
+}
+
+li {
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body,ul {
+   margin:0;
+}
+
 .text-field {
   margin: auto;
   width: 17vw;
@@ -32,12 +56,13 @@
 }
 
 .form-wrapper {
-  margin-top: 2vh;
+  margin-top: -5vh;
+  margin-left: 2vw;
   display: flex;
 }
 
 .button {
-  margin-top: 2vh;
+  margin-top: -1vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -56,6 +81,20 @@
   .order-data {
     margin-top: 1vh;
     margin-left: 2.6vw;
+  }
+
+  ul {
+    height: 10vh;
+    background-color:white;
+    overflow-y:auto;
+  }
+  
+  li {
+    height: 3vh;
+  }
+  
+  body,ul {
+     margin:0;
   }
   
   .text-field {
@@ -79,13 +118,14 @@
   }
   
   .form-wrapper {
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex;
   }
   
   .button {
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
   }
+
 }
