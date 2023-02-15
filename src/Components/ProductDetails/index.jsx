@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { adjustInventory, getProducts } from '../../store/products';
 import { addItem } from '../../store/cart';
 import { useParams } from "react-router-dom";
-import { Accordion, AccordionDetails, AccordionSummary, Card, CardContent, Button, Typography, CardMedia, CardActionArea } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Button, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './styles.scss';
 
