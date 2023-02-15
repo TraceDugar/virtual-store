@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, CardContent, CardActions, Button, TextField, Typography, Popper } from "@mui/material";
+import { Button, Card, CardActions, CardContent, Popper, TextField, Typography } from "@mui/material";
 import { Box } from '@mui/material';
 import { useDispatch, useSelector } from "react-redux";
 import { removeItem } from "../../store/cart";
@@ -7,17 +7,29 @@ import { When } from 'react-if';
 import './styles.scss';
 
 const ShoppingCart = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const { cart } = useSelector(state => state);
 
+  // Popper functionality
   const [anchorEl, setAnchorEl] = React.useState(null);
-
+  // Popper Handle Click
   const handleClick = (event) => {
     setAnchorEl(anchorEl ? null : event.currentTarget);
   };
-
+  // Popper Conditional logic
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popper' : undefined;
+
+  // cart Total Functionality
+  const initialValue = 0;
+  const total = cart.reduce((accumulator, current) => {
+    if (typeof current.price !== 'number' || isNaN(current.price)) {
+      return accumulator;
+    }
+    return accumulator + (parseFloat(current.price) * current.count);
+  }, initialValue).toFixed(2);
+
+  const formattedTotal = parseFloat(total).toFixed(2);
 
   return (
     <>
@@ -31,8 +43,9 @@ const ShoppingCart = () => {
               <div className="simple-cart">
                 <ul>
                   {cart.map((product, index) => (
-                    <li key={`cart-${index}`}>{product.name}
-                      {` $${product.price}`}
+                    <li key={`cart-${index}`}>
+                      {product.name} x {product.count}
+                      {` $${(parseFloat(product.price) * product.count).toFixed(2)}`}
                       <Button className="delete-item" color='error' onClick={() => dispatch(removeItem(product))}>Remove</Button>
                     </li>
                   ))}
@@ -41,14 +54,14 @@ const ShoppingCart = () => {
             </When>
           </Typography>
           <Typography variant="subtitle1" component="div">
-            total:
+            Total: $ {formattedTotal}
           </Typography>
         </CardContent>
         <CardContent className="form-wrapper">
           <CardContent>
             <div className="billing-fields">
               <Typography className="billing-details" >
-                Billing Address
+                Billing Details
               </Typography>
               <TextField className="text-field" size="small" id="standard-basic" label="Full Name" variant="standard" />
               <TextField disabled className="text-field" size="small" id="standard-basic" label="Address" variant="standard" />
