@@ -1,21 +1,20 @@
 .card-container {
-  margin-top: 8vh;
+  margin-top: 12vh;
   margin-bottom: 10vh;
-  margin-left: 28.5vw;
+  margin-left: 30vw;
   display: flex;
   gap: 10vw;
 }
 
 .product-name {
   text-align: left;
-  font-size: 2rem;
-  padding-left: 2vw;
-  padding-top: 2.5vh;
+  padding-left: 2.25vw;
+  padding-top: 1.75vh;
   font-weight: bolder ;
 }
 
 .links {
-  margin-top: 6vh;
+  margin-top: 4vh;
   display: flex;
   justify-content: space-evenly;
 }
@@ -26,19 +25,19 @@
     margin-bottom: 10vh;
     margin-left: 15vw;
     display: flex;
-    gap: 10vw;
+    gap: 14vw;
   }
 
   .product-name {
     text-align: left;
     font-size: 2rem;
-    padding-left: 3.5vw;
-    padding-top: 1.25vh;
+    padding-left: 4vw;
+    padding-top: 1vh;
     font-weight: bolder ;
   }
   
   .links {
-    margin-top: 3.5vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: space-evenly;
   }
