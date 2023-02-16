@@ -6,21 +6,22 @@ footer {
   left:0;
   bottom:0;
   right:0;
-  height: 50px;
+  height: 85px;
   width: 100%;
   padding: 15px;
 }
 
 .top-footer {
+  padding-top: 0.75vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.65rem;
+  font-size: 1rem;
 }
 
 .bottom-footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.85rem;
   color: #797979;
 }
 
@@ -34,20 +35,21 @@ footer {
     left:0;
     bottom:0;
     right:0;
-    height: 50px;
+    height: 75px;
     width: 96.925%;
   }
 
   .top-footer {
+    margin-top: -0.01vh;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.65rem;
+    font-size: 1rem;
   }
 
   .bottom-footer {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     color: #797979;
   }
 }

@@ -26,11 +26,11 @@ const ProductDetails = () => {
   return (
     <>
       {theProduct && <h1 className="title" >{theProduct.name}</h1>}
-      <Card className="card" sx={{ maxWidth: 280 }}>
+      <Card className="card" sx={{ width: 380, height: 620 }}>
         <CardActionArea>
           <CardMedia
             component='img'
-            height='410'
+            height='540'
             image={`https://source.unsplash.com/random?${theProduct.name}`}
             alt={theProduct.name}
           />
@@ -41,13 +41,13 @@ const ProductDetails = () => {
         </CardActionArea>
       </Card>
       <Button className="buy-button" variant="contained" onClick={() => handler(theProduct)}>Buy</Button>
-      <Typography className="related-items">Related Items</Typography>
+      <Typography className="related-items" variant="h4">Related Items</Typography>
       <div className="suggestions">
         <Card className="suggestions-card">Suggestion 1</Card>
         <Card className="suggestions-card">Suggestion 2</Card>
         <Card className="suggestions-card">Suggestion 3</Card>
       </div>
-      <Typography className="product-details">Product Details</Typography>
+      <Typography className="product-details" variant="h4">Product Details</Typography>
       <div className="accordion">
         <Accordion >
           <AccordionSummary

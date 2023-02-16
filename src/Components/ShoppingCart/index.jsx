@@ -35,7 +35,7 @@ const ShoppingCart = () => {
     <>
       <Card className="cart-card">
         <CardContent className="order-data">
-          <Typography variant="h6">
+          <Typography variant="h5" mb='2vh' className='order-summary'>
             Order Summary
           </Typography>
           <Typography>
@@ -46,14 +46,14 @@ const ShoppingCart = () => {
                     <li key={`cart-${index}`}>
                       {product.name} x {product.count}
                       {` $${(parseFloat(product.price) * product.count).toFixed(2)}`}
-                      <Button className="delete-item" color='error' onClick={() => dispatch(removeItem(product))}>Remove</Button>
+                      <Button className="delete-item"  color='error' onClick={() => dispatch(removeItem(product))}>Remove</Button>
                     </li>
                   ))}
                 </ul>
               </div>
             </When>
           </Typography>
-          <Typography variant="subtitle1" component="div">
+          <Typography className='total' mt='1vh' variant="h6" component="div">
             Total: $ {formattedTotal}
           </Typography>
         </CardContent>

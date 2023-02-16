@@ -19,23 +19,21 @@
 
 ### Features and Routes
 
-- Feature 1: Add categories that hold products.
-- Feature 2: Add Products within catgories.
-- Feature 3: Add Cart.
+- Feature 1: Categories that hold products.
+- Feature 2: Products within categories.
+- Feature 3: Cart.
 - Feature 4: Connect to database for products and categories.
 - Feature 5: Updates Inventory for the cart.
-- Feature 6: Add cart page.
-- Feature 7: Add product description page.
-- Feature 8: Add Page Router.
-- Feature 9: Add Image Generator for products in Categories and Description page.
-- Feature 10: Add Accordion for Specs, and reviews.
-- Feature 11: Add Suggestions for like items.
-- Feature 12: Responsive Design for portrait and Land Scape orientation.
-
-#### Tests
-
-  Jest --coverage --verbose
-
-  `npm test`
+- Feature 6: Add product description page.
+- Feature 7: Add Page Router.
+- Feature 8: Add Image Generator for products in Categories and Description page.
+- Feature 9: Add Accordion for Specs, and reviews.
+- Feature 10: Add Suggestions for like items.
+- Feature 11: Responsive Design for portrait and landscape orientation.
+- Feature 12: Cart Scrolling list keeps items within the cart organized
+- Feature 13: Cart price and Item on one line with counter.
+- Feature 14: Cart Total Price is added as cart fill with more items.
+- Feature 15: Popper to simulate successful order.
+- Feature 16: Field for billing information (Most items lines disabled for privacy of for this purpose)
 
 #### UML / Diagrams

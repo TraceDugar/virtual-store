@@ -6,9 +6,9 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  box-shadow: 0 -6px 4px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -5px 8px 8px rgba(0, 0, 0, 0.5);
   z-index: 4;
-  height: 45px;
+  height: 70px;
 }
 
 .header-buttons {
@@ -19,10 +19,10 @@ header {
 .our-store {
   text-decoration: none;
   color: black;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 10px;
-  margin-top: auto;
+  margin-left: 1vw;
+  margin-top: 1vh;
   margin-bottom: auto;
 }
 
@@ -33,6 +33,29 @@ header {
 .cart-link {
   text-decoration: none;
   color: black;
-  font-size: 0.45rem;
+  font-size: 0.75rem;
   size: 0.1vh;
+  margin-top: 1vh;
+  margin-right: 1vw;
+}
+
+@media (orientation: portrait) {
+
+  .our-store {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+    margin-bottom: auto;
+  }
+  .cart-link {
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+    size: 0.1vh;
+    margin-top: 0.5vh;
+    margin-right: 1vw;
+  }
 }
