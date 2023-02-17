@@ -8,9 +8,12 @@
 
 ## Description
 
+E-commerce site built using React.js, Redux toolkit, Scss, Material UI, Javascript.
+
 ## Links and Resources
 
 [Github Repository](https://github.com/TraceDugar/virtual-store)
+
 [Live Site](https://virtual-store-traced.onrender.com)
 
 ### Running the application
@@ -35,5 +38,19 @@
 - Feature 14: Cart Total Price is added as cart fill with more items.
 - Feature 15: Popper to simulate successful order.
 - Feature 16: Field for billing information (Most items lines disabled for privacy of for this purpose)
+- Feature 17: Totals add and subtract themselves per total number of a Product in a cart.
+- Feature 18: Grand Total Adjusts itself depending upon items in the cart.
 
-#### UML / Diagrams
+## UML / Diagrams
+
+Virtual Store UML
+![Virtual Store UML](assets/Virtual_Store_UML.jpg)
+
+Store Front Diagram
+![Store Front Diagram](assets/labeled_StoreFront.jpg)
+
+Product Details Diagram
+![Product Details Diagram](assets/labeled_ProductDetails.jpg)
+
+Shopping Cart Diagram
+![Shopping Cart Diagram](assets/labeled_ShoppingCart.jpg)
