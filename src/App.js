@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductDetails from "./Components/ProductDetails";
 
-// The Main body of the App
+// The Main body of the App.
 
 const App = () => {
   return (
@@ -30,7 +30,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
 
-      {/* The Foother Coponent is below the pages in order to be ever present within the app no matter the page */}
+      {/* The Foother Coponent is below the pages in order to be ever present within the app no matter the page. */}
       <Footer />
     </>
   )
