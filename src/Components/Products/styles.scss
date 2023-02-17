@@ -6,11 +6,15 @@
   gap: 10vw;
 }
 
+.product-card {
+  background-color: #fcd8aa;
+}
+
 .product-name {
   text-align: left;
   padding-left: 2.25vw;
   padding-top: 1.75vh;
-  font-weight: bolder ;
+  font-weight: bolder;
 }
 
 .links {
@@ -33,9 +37,9 @@
     font-size: 2rem;
     padding-left: 4vw;
     padding-top: 1vh;
-    font-weight: bolder ;
+    font-weight: bolder;
   }
-  
+
   .links {
     margin-top: 2vh;
     display: flex;

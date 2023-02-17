@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-// The products slice reducer is where the app.
+// The products slice reducer is where the app get the products state from the API.
 
-// The itial state of the App.
+// The initial state of the App.
 const initialState = [];
 
 // The slice is created here with the setProducts and getProducts functions for the API.
@@ -27,7 +27,7 @@ export const getProducts = () => async (dispatch, getState) => {
 
 //  The is where the inventory adjustment is made to the API.
 export const adjustInventory = (product) => async (dispatch, getState) => {
- let updatedProduct = {...product, inStock: product.inStock - 1}
+  let updatedProduct = { ...product, inStock: product.inStock - 1 }
   let response = await axios.put(`https://api-js401.herokuapp.com/api/v1/products/${product._id}`, updatedProduct);
   dispatch(updateProduct(response.data));
 };

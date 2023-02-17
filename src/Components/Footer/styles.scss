@@ -1,11 +1,9 @@
-$background: #f5f5f5;
-
 footer {
-  background-color: #e6e6e6;
-  position:fixed;
-  left:0;
-  bottom:0;
-  right:0;
+  background-color: #00459a;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
   height: 85px;
   width: 100%;
   padding: 15px;
@@ -16,25 +14,26 @@ footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  color: #bedcff;
 }
 
 .bottom-footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.85rem;
-  color: #797979;
+  color: #bedcff;
 }
 
 @media (orientation: portrait) {
   footer {
     position: absolute;
-    bottom:1px;
-    background-color: #e6e6e6;
+    bottom: 1px;
+    background-color: #00459a;
     padding: 15px;
-    position:fixed;
-    left:0;
-    bottom:0;
-    right:0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
     height: 75px;
     width: 96.925%;
   }
@@ -50,6 +49,6 @@ footer {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.75rem;
-    color: #797979;
+    color: #acc7e6;
   }
 }

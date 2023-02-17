@@ -5,6 +5,7 @@
   font-weight: 100;
   font-size: 1.35rem;
   margin-bottom: 2vh;
+  color: #00459a;
 }
 
 .categories-buttons {
@@ -12,7 +13,7 @@
 }
 
 @media (orientation: portrait) {
-  .categories{
+  .categories {
     margin-left: 2vw;
     margin-top: 5.5vh;
     margin-bottom: 1vh;
@@ -21,5 +22,5 @@
   .categories-buttons {
     margin-left: 1.5vw;
   }
-  
+
 }
