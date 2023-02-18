@@ -43,14 +43,14 @@ E-commerce site built using React.js, Redux toolkit, Scss, Material UI, Javascri
 
 ## UML / Diagrams
 
-Virtual Store UML
+## Virtual Store UML
 ![Virtual Store UML](assets/Virtual_Store_UML.jpg)
 
-Store Front Diagram
+## Store Front Diagram
 ![Store Front Diagram](assets/labeled_StoreFront.jpg)
 
-Product Details Diagram
+## Product Details Diagram
 ![Product Details Diagram](assets/labeled_ProductDetails.jpg)
 
-Shopping Cart Diagram
+## Shopping Cart Diagram
 ![Shopping Cart Diagram](assets/labeled_ShoppingCart.jpg)
