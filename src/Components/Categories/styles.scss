@@ -1,26 +1,29 @@
 .categories {
   margin-left: 1vw;
-  margin-top: 10vh;
+  margin-top: clamp(85px, 4vw, 150px);
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 1.35rem;
-  margin-bottom: 2vh;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 1.5vw, 1.65rem);
+  margin-bottom: 1vw;
   color: #00459a;
 }
 
 .categories-buttons {
   margin-left: 0.75vw;
+  background-color: #ffffff89;
+  border: 1px solid  #00459a;
+  box-shadow: 3px 2px 3px #00224b77;
 }
 
 @media (orientation: portrait) {
   .categories {
-    margin-left: 2vw;
-    margin-top: 5.5vh;
+    margin-left: 1vh;
+    margin-top: clamp(85px, 4vh, 150px);
     margin-bottom: 1vh;
   }
 
   .categories-buttons {
-    margin-left: 1.5vw;
+    margin-left: clamp(0px, 0.2vh, 150px);
   }
 
 }

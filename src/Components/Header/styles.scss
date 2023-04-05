@@ -9,7 +9,7 @@ header {
   top: 0;
   box-shadow: 0 -5px 8px 8px rgba(0, 0, 0, 0.5);
   z-index: 4;
-  height: 70px;
+  height: clamp(70px, 3vw, 100px);
 }
 
 
@@ -23,23 +23,20 @@ header {
   text-transform: capitalize;
   color: #bedcff;
   font-family: 'Lobster', cursive;
-  font-size: 1.5rem;
-  margin-left: 1vw;
-  margin-top: 1vh;
-  margin-bottom: auto;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin: clamp(1px, 0.1vw, 4px) clamp(10px, 1vw, 150px);
 }
 
 .header-button2 {
-  size: 0.4vh;
+  size: 4vw;
 }
 
 .cart-link {
   text-decoration: none;
   color: #bedcff;
-  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 1vw, 1rem);
   size: 0.1vh;
-  margin-top: 1vh;
-  margin-right: 1vw;
+  margin: clamp(16px, 0.5vw, 150px) clamp(10px, 1vw, 150px);
 }
 
 @media (orientation: portrait) {
@@ -47,19 +44,16 @@ header {
   .our-store {
     text-decoration: none;
     color: #bedcff;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2vh, 2rem);
     font-family: 'Lobster', cursive;
-    margin-left: 1vw;
-    margin-top: 0.5vh;
-    margin-bottom: auto;
+    margin: clamp(2px, 0.15vh, 4px) clamp(8px, 3vh, 150px);
   }
 
   .cart-link {
     text-decoration: none;
     color: #bedcff;
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 1vw, 1rem);
     size: 0.1vh;
-    margin-top: 0.5vh;
-    margin-right: 1vw;
+    margin: clamp(16px, 0.5vh, 150px) clamp(15px, 3vh, 150px);
   }
 }

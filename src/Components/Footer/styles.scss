@@ -4,51 +4,45 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 85px;
-  width: 100%;
-  padding: 15px;
+  height: clamp(80px, 5vw, 120px);
+  padding: 5px;
 }
 
 .top-footer {
-  padding-top: 0.75vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size:clamp(1rem, 1vw, 1.35rem);
   color: #bedcff;
 }
 
 .bottom-footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.85rem;
+  font-size:clamp(0.9rem, 0.85vw, 1.15rem);
   color: #bedcff;
 }
 
 @media (orientation: portrait) {
   footer {
-    position: absolute;
-    bottom: 1px;
     background-color: #00459a;
-    padding: 15px;
     position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
-    height: 75px;
-    width: 100%;
+    height: clamp(80px, 10vh, 120px);
   }
 
   .top-footer {
-    margin-top: -0.01vh;
+    margin-top: clamp(17px ,2vh, 50px);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size:clamp(0.75rem, 1.35vh, 1.35rem);
   }
 
   .bottom-footer {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75rem;
+    font-size:clamp(0.65rem, 1.15vh, 1.35rem);
     color: #acc7e6;
   }
 }
