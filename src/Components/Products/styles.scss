@@ -1,48 +1,59 @@
 .card-container {
-  margin-top: 12vh;
-  margin-bottom: 10vh;
-  margin-left: 30vw;
-  display: flex;
-  gap: 10vw;
+  margin-top: 4vw;
+  margin-bottom: 10vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4vw;
+  row-gap: 2vw;
 }
 
 .product-card {
   background-color: #fcd8aa;
 }
 
+.card-picture{
+  width: clamp(20px, 30vw, 250px);
+  height: clamp(20px, 30vw, 300px);
+}
+
 .product-name {
   text-align: left;
   padding-left: 2.25vw;
-  padding-top: 1.75vh;
+  padding-top: 1.75vw;
   font-weight: bolder;
 }
 
 .links {
-  margin-top: 4vh;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
   display: flex;
   justify-content: space-evenly;
 }
 
 @media (orientation: portrait) {
   .card-container {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 15vw;
+    margin: 0 4vh;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
     display: flex;
-    gap: 14vw;
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  .card-picture{
+    width: clamp(20px, 30vh, 250px);
+    height: clamp(20px, 30vh, 300px);
   }
 
   .product-name {
     text-align: left;
-    font-size: 2rem;
-    padding-left: 4vw;
+    padding-left: 4vh;
     padding-top: 1vh;
-    font-weight: bolder;
   }
 
   .links {
     margin-top: 2vh;
-    display: flex;
-    justify-content: space-evenly;
   }
 }

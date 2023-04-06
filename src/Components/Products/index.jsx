@@ -34,18 +34,18 @@ const Products = () => {
       {/* Product Card */}
       <div className='card-container'>
         {activeCategory && renderList.map((product, index) => (
-          <Card sx={{ width: 300, height: 400 }} style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
+          <Card style={{ backgroundColor: "F9FBFF", color: "#00459a" }} raised={true}>
 
             {/* Card Image */}
             <CardMedia
+              className='card-picture'
               component='img'
               alt='product'
-              height='250'
               image={`https://source.unsplash.com/random?${product.name}`}
             />
 
             {/* Product Name */}
-            <Typography className='product-name' fontSize='1.5rem'>
+            <Typography className='product-name' fontSize='clamp(1.75em, 2rem,2.5em)'>
               {product.name}
             </Typography>
 
