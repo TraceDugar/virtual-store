@@ -10,8 +10,8 @@
 
 .categories-buttons {
   margin-left: 0.75vw;
-  background-color: #ffffff89;
-  border: 1px solid  #00459a;
+  background-image: linear-gradient(#f1f1f1e2, #d5d5d5, #cdcdcd, #b9b9b9, #b0b0b0, rgba(58, 58, 58, 0.54));
+  border: 1px solid #00459a;
   box-shadow: 3px 2px 3px #00224b77;
 }
 
@@ -22,8 +22,14 @@
     margin-bottom: 1vh;
   }
 
-  .categories-buttons {
-    margin-left: clamp(0px, 0.2vh, 150px);
+  .categories-component{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .browse-button {
+    size:'small';
   }
 
 }

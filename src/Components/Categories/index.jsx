@@ -20,16 +20,18 @@ const Categories = () => {
     <>
 
       {/* Category Title. */}
-      <h4 className='categories'>Browse our Categories</h4>
 
-      {/* Category Button Group. */}
-      <ButtonGroup className='categories-buttons' variant='text' aria-label='text button group'>
-        {categories.map((category, index) => (
+      <div className='categories-component'>
+        <h4 className='categories'>Browse our Categories</h4>
+        {/* Category Button Group. */}
+        <ButtonGroup className='categories-buttons' variant='text' aria-label='text button group'>
+          {categories.map((category, index) => (
 
-          // Category button.
-          <Button data-testid={`category-${index}`} size="large" key={`category-${index}`} onClick={() => dispatch(selectCategory(category.name))}>{category.name}</Button>
-        ))}
-      </ButtonGroup>
+            // Category button.
+            <Button data-testid={`category-${index}`} size="medium" key={`category-${index}`} onClick={() => dispatch(selectCategory(category.name))}>{category.name}</Button>
+          ))}
+        </ButtonGroup>
+      </div>
     </>
   )
 };
