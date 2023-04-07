@@ -1,79 +1,77 @@
+.product-detail-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+
 .title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   text-align: center;
-  margin-top: 10vh;
-  font-size: 2.5rem;
+  margin-top: clamp(20px, 10vw, 120px);
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
   color: #00459a;
 }
 
+
 .card {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2vh;
-  width: 20vw;
+  margin: 0 auto;
+  padding-bottom: clamp(30px, 1vw, 40px);
+}
+
+.detail-image {
+  height: clamp(300px, 55.25vw, 1500px);
 }
 
 .card-words {
+  margin-top: clamp(10px, 1vw, 20px);
   display: flex;
   justify-content: space-between;
-  margin-top: 0.75vh;
 }
 
 .card-stock {
   color: rgb(118, 118, 118);
-  font-size: 1.55rem;
-}
-
-.card-price {
-  font-size: 1.55rem;
 }
 
 .buy-button {
-  font-size: 1.75rem;
-  left: 35vw;
-  width: 29.25vw;
-  height: 4.5vh;
-  margin-bottom: 1vh;
+  width: 45vw;
+  height: 4.5vw;
 }
 
 .related-items {
-  padding-top: 1vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 1.5vh;
+  font-size: clamp(2.5rem, 4vw, 4.4rem);
   color: #00459a;
 }
 
 .suggestions {
-  padding-top: 1vh;
-  margin-left: 35vw;
   display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  max-width: 45vw;
 }
 
 .suggestions-card {
   text-align: center;
-  width: 7.75vw;
-  padding: 1vw;
+  width: 17vw;
+  padding: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: .75rem;
+  font-size: clamp(0.2em, 1.5vw, 2.25rem);
 }
 
 .product-details {
   color: #00459a;
-  padding-top: 2vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: clamp(2.5rem, 4vw, 4.4rem);
 }
 
 .accordion {
-  margin-top: 2vh;
   width: 29.25vw;
-  margin-left: 35vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: .5rem;
+  font-size: clamp(0.2em, 1.5vw, 2.25rem);
   margin-bottom: 18vh;
 }
 

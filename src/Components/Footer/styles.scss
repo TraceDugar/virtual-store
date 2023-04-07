@@ -1,6 +1,6 @@
 footer {
   background-image: linear-gradient(#00459a, #00459a, #003a81, #00316d, #002754);
-  border-top: 3px outset #0073ff;
+  border-top: 3px outset #0061d7;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -12,14 +12,14 @@ footer {
 .top-footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size:clamp(1rem, 1vw, 1.35rem);
+  font-size: clamp(1rem, 1vw, 1.35rem);
   color: #bedcff;
 }
 
 .bottom-footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size:clamp(0.9rem, 0.85vw, 1.15rem);
+  font-size: clamp(0.9rem, 0.85vw, 1.15rem);
   color: #bedcff;
 }
 
@@ -34,16 +34,16 @@ footer {
   }
 
   .top-footer {
-    margin-top: clamp(17px ,2vh, 50px);
+    margin-top: clamp(17px, 2vh, 50px);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size:clamp(0.75rem, 1.35vh, 1.35rem);
+    font-size: clamp(0.75rem, 1.35vh, 1.35rem);
   }
 
   .bottom-footer {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size:clamp(0.65rem, 1.15vh, 1.35rem);
+    font-size: clamp(0.65rem, 1.15vh, 1.35rem);
     color: #acc7e6;
   }
 }
