@@ -13,7 +13,7 @@
   background-color: #fcd8aa;
 }
 
-.card-picture{
+.card-picture {
   width: clamp(20px, 30vw, 250px);
   height: clamp(20px, 30vw, 300px);
 }
@@ -35,14 +35,14 @@
 @media (orientation: portrait) {
   .card-container {
     margin: 0 4vh;
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-bottom: 15vh;
     display: flex;
     flex-direction: column;
     gap: 3vh;
   }
 
-  .card-picture{
+  .card-picture {
     width: clamp(20px, 30vh, 250px);
     height: clamp(20px, 30vh, 300px);
   }

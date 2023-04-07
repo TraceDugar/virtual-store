@@ -16,20 +16,16 @@
 }
 
 @media (orientation: portrait) {
-  .categories {
-    margin-left: 1vh;
-    margin-top: clamp(85px, 4vh, 150px);
-    margin-bottom: 1vh;
-  }
-
-  .categories-component{
+  .categories-component {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
-  .browse-button {
-    size:'small';
+  .categories {
+    margin-left: 1vh;
+    margin-top: clamp(85px, 4vh, 150px);
+    margin-bottom: 1vh;
   }
 
 }

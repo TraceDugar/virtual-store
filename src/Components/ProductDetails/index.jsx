@@ -30,79 +30,85 @@ const ProductDetails = () => {
 
   return (
     <>
-      {/* This is the Product name title of the page. */}
-      {theProduct && <h1 className="title" >{theProduct.name}</h1>}
 
-      {/* This is the product card. */}
-      <Card className="card" sx={{ width: 380, height: 620 }} style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
-        <CardActionArea>
+      <div className="product-detail-page">
 
-          {/* This is the image of the product being displayed. */}
-          <CardMedia
-            component='img'
-            height='540'
-            image={`https://source.unsplash.com/random?${theProduct.name}`}
-            alt={theProduct.name}
-          />
+        {/* This is the Product name title of the page. */}
+        {theProduct && <h1 className="title" >{theProduct.name}</h1>}
 
-          {/* Theses are the words at the bottom of the card. */}
-          <CardContent className="card-words">
-            <Typography className="card-stock" >In Stock: {theProduct.inStock}</Typography>
-            <Typography className="card-price" >${theProduct.price}</Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+        {/* This is the product card. */}
+        <Card className="card" sx={{ width: '45vw', height: '59vw' }} style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
+          <CardActionArea>
 
-      {/* This is the buy button. */}
-      <Button className="buy-button" variant="contained" onClick={() => handler(theProduct)}>Buy</Button>
+            {/* This is the image of the product being displayed. */}
+            <CardMedia
+              className="detail-image"
+              component='img'
+              image={`https://source.unsplash.com/random?${theProduct.name}`}
+              alt={theProduct.name}
+            />
 
-      {/* This is the group of suggestion cards. */}
-      <Typography className="related-items" variant="h4">Related Items</Typography>
-      <div className="suggestions">
+            {/* Theses are the words at the bottom of the card. */}
+            <CardContent className="card-words">
+              <Typography className="card-stock" fontSize='clamp(0.2em, 1.5vw, 2.25rem)' >In Stock: {theProduct.inStock}</Typography>
+              <Typography fontSize='clamp(0.2em, 1.5vw, 2.25rem)' >${theProduct.price}</Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
 
-        {/* This is the individual cards. */}
-        <Card className="suggestions-card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>Suggestion 1</Card>
-        <Card className="suggestions-card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>Suggestion 2</Card>
-        <Card className="suggestions-card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>Suggestion 3</Card>
-      </div>
+        {/* This is the buy button. */}
+        <Button className="buy-button" 
+        style={{ fontSize: 'clamp(0.2em, 1.5vw, 2.25rem)' }}
+        variant="contained" onClick={() => handler(theProduct)}>Buy</Button>
 
-      {/* This is where the product details are. */}
-      <Typography className="product-details" variant="h4">Product Details</Typography>
+        {/* This is the group of suggestion cards. */}
+        <Typography className="related-items" variant="h4">Related Items</Typography>
+        <div className="suggestions">
 
-      {/* This where the accordion is for product details. */}
-      <div className="accordion">
+          {/* This is the individual cards. */}
+          <Card className="suggestions-card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>Suggestion 1</Card>
+          <Card className="suggestions-card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>Suggestion 2</Card>
+          <Card className="suggestions-card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>Suggestion 3</Card>
+        </div>
 
-        {/* Accordion for Product Details. */}
-        <Accordion style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography>
-              Specifications
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>Product Specs.</Typography>
-          </AccordionDetails>
-        </Accordion>
+        {/* This is where the product details are. */}
+        <Typography className="product-details" variant="h4">Product Details</Typography>
 
-        {/* Accordion for Reviews. */}
-        <Accordion style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2a-content"
-            id="panel2a-header"
-          >
-            <Typography>
-              User Reviews
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>A list of reviews...</Typography>
-          </AccordionDetails>
-        </Accordion>
+        {/* This where the accordion is for product details. */}
+        <div className="accordion">
+
+          {/* Accordion for Product Details. */}
+          <Accordion style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>
+                Specifications
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>Product Specs.</Typography>
+            </AccordionDetails>
+          </Accordion>
+
+          {/* Accordion for Reviews. */}
+          <Accordion style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+            >
+              <Typography>
+                User Reviews
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>A list of reviews...</Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
       </div>
     </>
   )
