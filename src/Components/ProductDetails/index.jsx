@@ -30,14 +30,13 @@ const ProductDetails = () => {
 
   return (
     <>
-
       <div className="product-detail-page">
 
         {/* This is the Product name title of the page. */}
         {theProduct && <h1 className="title" >{theProduct.name}</h1>}
 
         {/* This is the product card. */}
-        <Card className="card" sx={{ width: '45vw', height: '59vw' }} style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
+        <Card className="card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
           <CardActionArea>
 
             {/* This is the image of the product being displayed. */}
@@ -50,19 +49,19 @@ const ProductDetails = () => {
 
             {/* Theses are the words at the bottom of the card. */}
             <CardContent className="card-words">
-              <Typography className="card-stock" fontSize='clamp(0.2em, 1.5vw, 2.25rem)' >In Stock: {theProduct.inStock}</Typography>
-              <Typography fontSize='clamp(0.2em, 1.5vw, 2.25rem)' >${theProduct.price}</Typography>
+              <Typography className="card-stock" fontSize='clamp(1em, 1.5vw, 2.25rem)' >In Stock: {theProduct.inStock}</Typography>
+              <Typography fontSize='clamp(1em, 1.5vw, 2.25rem)' >${theProduct.price}</Typography>
             </CardContent>
           </CardActionArea>
         </Card>
 
         {/* This is the buy button. */}
-        <Button className="buy-button" 
-        style={{ fontSize: 'clamp(0.2em, 1.5vw, 2.25rem)' }}
-        variant="contained" onClick={() => handler(theProduct)}>Buy</Button>
+        <Button className="buy-button"
+          style={{ fontSize: 'clamp(1em, 1.5vw, 2.25rem)' }}
+          variant="contained" onClick={() => handler(theProduct)}>Buy</Button>
 
         {/* This is the group of suggestion cards. */}
-        <Typography className="related-items" variant="h4">Related Items</Typography>
+        <p className="related-items">Related Items</p>
         <div className="suggestions">
 
           {/* This is the individual cards. */}
@@ -72,7 +71,7 @@ const ProductDetails = () => {
         </div>
 
         {/* This is where the product details are. */}
-        <Typography className="product-details" variant="h4">Product Details</Typography>
+        <p className="product-details">Product Details</p>
 
         {/* This where the accordion is for product details. */}
         <div className="accordion">
@@ -84,12 +83,12 @@ const ProductDetails = () => {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography>
+              <p className="accordion-text-1">
                 Specifications
-              </Typography>
+              </p>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>Product Specs.</Typography>
+              <p className="accordion-text-2">Product Specs.</p>
             </AccordionDetails>
           </Accordion>
 
@@ -100,12 +99,12 @@ const ProductDetails = () => {
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
-              <Typography>
+              <p className="accordion-text-1">
                 User Reviews
-              </Typography>
+              </p>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>A list of reviews...</Typography>
+              <p className="accordion-text-2">A list of reviews...</p>
             </AccordionDetails>
           </Accordion>
         </div>
