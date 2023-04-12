@@ -34,7 +34,7 @@ const Products = () => {
       {/* Product Card */}
       <div className='card-container'>
         {activeCategory && renderList.map((product, index) => (
-          <Card style={{ backgroundColor: "F9FBFF", color: "#00459a" }} raised={true}>
+          <Card className='storefront-card' style={{ backgroundColor: "F9FBFF", color: "#00459a" }} raised={true}>
 
             {/* Card Image */}
             <CardMedia
