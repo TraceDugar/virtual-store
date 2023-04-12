@@ -1,3 +1,4 @@
+// Landscape
 .card-container {
   margin-top: 4vw;
   margin-bottom: 10vw;
@@ -32,6 +33,31 @@
   justify-content: space-evenly;
 }
 
+// Laptop Screen
+@media (orientation: landscape) and (min-width:1480px) and (max-width: 1920px) {
+
+  .storefront-card {
+    width: clamp(20px, 30vw, 475px);
+    height: clamp(400px, 32.75vw, 525px);
+  }
+}
+
+// Large Monitor Landscape
+@media (orientation: landscape) and (min-width:1921px) {
+  .storefront-card {
+    width: clamp(20px, 30vw, 525px);
+    height: clamp(400px, 32.75vw, 550px);
+  }
+
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4.25vw;
+    row-gap: 2.2vw;
+  }
+}
+
+
+// Mobile
 @media (orientation: portrait) {
   .card-container {
     margin: 0 4vh;
@@ -55,5 +81,49 @@
 
   .links {
     margin-top: 2vh;
+  }
+
+
+  // Tablet 
+  @media (min-width:500px) and (max-width:999px) {
+    .card-container {
+      margin: 0 auto;
+      margin-top: 3vh;
+      margin-bottom: 15vh;
+      align-items: center;
+      width: clamp(20px, 40vh, 750px);
+    }
+
+    .storefront-card {
+      width: clamp(20px, 40vh, 750px);
+      height: clamp(300px, 35.75vh, 475px);
+    }
+
+    .card-picture {
+      width: clamp(20px, 40vh, 750px);
+      height: clamp(20px, 23vh, 450px);
+    }
+  }
+
+
+  // Vertical Monitor
+  @media (min-width:1000px) and (max-width:2000px) {
+    .card-container {
+      margin: 0 auto;
+      margin-top: 3vh;
+      margin-bottom: 10vh;
+      align-items: center;
+      width: clamp(20px, 40vh, 750px);
+    }
+
+    .storefront-card {
+      width: clamp(20px, 30vh, 750px);
+      height: clamp(400px, 32.75vh, 875px);
+    }
+
+    .card-picture {
+      width: clamp(20px, 40vh, 750px);
+      height: clamp(20px, 23vh, 450px);
+    }
   }
 }
