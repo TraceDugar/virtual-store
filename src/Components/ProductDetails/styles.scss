@@ -1,4 +1,6 @@
-.product-detail-page{
+// Landscape Orientation
+
+.product-detail-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,11 +19,12 @@
 
 .card {
   margin: 0 auto;
-  padding-bottom: clamp(30px, 1vw, 40px);
+  width: 45vw;
+  padding-bottom: clamp(10px, 0.25vw, 20px);
 }
 
 .detail-image {
-  height: clamp(300px, 55.25vw, 1500px);
+  height: clamp(300px, 35.25vw, 1500px);
 }
 
 .card-words {
@@ -58,7 +61,7 @@
   width: 17vw;
   padding: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(0.2em, 1.5vw, 2.25rem);
+  font-size: clamp(0.2rem, 1.35vw, 2.25rem);
 }
 
 .product-details {
@@ -69,86 +72,138 @@
 }
 
 .accordion {
-  width: 29.25vw;
+  width: 45vw;
+  height: 4.5vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(0.2em, 1.5vw, 2.25rem);
-  margin-bottom: 18vh;
+  margin-bottom: clamp(420px, 25vw, 625px);
 }
 
+.accordion-text-1 {
+  font-size: clamp(1.2rem, 1.35vw, 2.25rem);
+}
+
+.accordion-text-2 {
+  font-size: clamp(1rem, 0.85vw, 2.25rem);
+}
+
+
+// Mobile layout
 @media (orientation: portrait) {
   .title {
-    font-size: 3rem;
-    margin-top: 6vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    text-align: center;
+    font-size: clamp(1.75rem, 5vh, 4.4rem);
+    margin-top: clamp(90px, 10vh, 220px);
   }
 
   .card {
-    margin-top: 3vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1vh;
+    width: clamp(225px, 1.25vh, 1500px);
+    height: clamp(227px, 1.5vh, 1000px);
+    padding-bottom: clamp(100px, 15.75vw, 120px);
+  }
+
+  .detail-image {
+    height: clamp(290px, 2vh, 1000px);
   }
 
   .card-words {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.75vh;
+    margin-top: clamp(-10px, -1vh, 20px);
   }
 
   .card-stock {
     color: rgb(118, 118, 118);
-    font-size: 2rem;
+    font-size: clamp(1em, 11.5vh, 4.4rem);
   }
 
-  .card-price {
-    font-size: 2rem;
-  }
 
   .buy-button {
-    top: 1vh;
-    font-size: 1.5rem;
-    left: 30.25vw;
-    width: 39.25vw;
-    height: 2vh;
+    width: clamp(225px, 15.25vh, 1500px);
+    height: 6vh;
   }
 
   .related-items {
-    padding-top: 4vh;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 1vh;
+    font-size: clamp(1.5rem, 4vh, 4.4rem);
   }
 
   .suggestions {
-    padding-top: 2vh;
-    margin-left: 30.5vw;
-    display: flex;
-    font-size: large;
+    gap: 1vh;
+    max-width: clamp(325px, 15.25vh, 1500px);
   }
 
   .suggestions-card {
-    text-align: center;
-    width: 10vw;
-    padding: 1.5vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    padding: 1.5vh;
+    width: 17vh;
+    font-size: clamp(0.8rem, 1.35vh, 2.25rem);
   }
 
   .product-details {
-    padding-top: 4vh;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vh, 4.4rem);
   }
 
   .accordion {
-    margin-top: 2vh;
-    width: 39.5vw;
-    margin-left: 30.5vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .5rem;
+    width: clamp(225px, 15.25vh, 1500px);
+    margin-bottom: clamp(420px, 38vh, 525px);
   }
+
+  .accordion-text-1 {
+    font-size: clamp(1rem, 1.35vh, 2.25rem);
+  }
+
+  .accordion-text-2 {
+    font-size: clamp(0.8rem, 0.85vw, 2.25rem);
+  }
+
+  // Tablet
+  @media (min-width:500px) and (max-width:999px) {
+    .card {
+      width: clamp(425px, 28.25vw, 1500px);
+      height: clamp(510px, 28.5vw, 1000px);
+      padding-bottom: clamp(10px, 16vw, 16px);
+    }
+
+    .detail-image {
+      height: clamp(490px, 28vw, 1000px);
+    }
+
+    .buy-button {
+      width: clamp(425px, 28.25vh, 1500px);
+      height: 4vh;
+    }
+
+    .suggestions {
+      max-width: clamp(425px, 15.25vh, 1500px);
+    }
+
+    .accordion {
+      width: clamp(425px, 15.25vh, 1500px);
+      margin-bottom: clamp(420px, 38vh, 525px);
+    }
+  }
+
+  @media (min-width: 1000px) and (max-width: 2000px) {
+
+    .card {
+      width: clamp(625px, 38.25vh, 1500px);
+      height: clamp(710px, 38.5vh, 1000px);
+      padding-bottom: clamp(10px, 16vw, 16px);
+    }
+
+    .detail-image {
+      height: clamp(490px, 38vh, 1000px);
+    }
+
+    .buy-button {
+      width: clamp(425px, 38.25vh, 1500px);
+      height: 4vh;
+    }
+
+    .suggestions {
+      max-width: clamp(425px, 38.25vh, 1500px);
+    }
+
+    .accordion {
+      width: clamp(425px, 38.25vh, 1500px);
+      margin-bottom: clamp(420px, 38vh, 525px);
+    }
+
+  }
+
 }
