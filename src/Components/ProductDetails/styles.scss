@@ -1,5 +1,4 @@
 // Landscape Orientation
-
 .product-detail-page {
   display: flex;
   flex-direction: column;
@@ -15,7 +14,6 @@
   font-size: clamp(2.5rem, 5vw, 4.4rem);
   color: #00459a;
 }
-
 
 .card {
   margin: 0 auto;
@@ -178,8 +176,7 @@
     }
   }
 
-
-  // Vertical Monitors
+  // Vertical Monitor
   @media (min-width: 1000px) and (max-width: 2000px) {
 
     .card {
@@ -205,7 +202,5 @@
       width: clamp(425px, 38.25vh, 1500px);
       margin-bottom: clamp(420px, 38vh, 525px);
     }
-
   }
-
 }
