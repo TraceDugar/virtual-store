@@ -44,7 +44,7 @@ const ShoppingCart = () => {
 
   return (
     <>
-      <Card className="cart-card" style={{ backgroundColor: "#f0f0f0", color: "#00459a" }}>
+      <Card className="cart-card" style={{  backgroundColor: "F9FBFF", color: "#00459a" }}>
         <CardContent className="order-data">
           <Typography variant="h5" mb='2vh' >
             Order Summary
@@ -82,12 +82,13 @@ const ShoppingCart = () => {
 
           {/* Customer shipping and payment information go here. */}
           <CardContent>
-            <div className="billing-fields">
+            <div className="left-column">
 
               {/* Billing address column. */}
               <Typography className="billing-details" >
                 Billing Details
               </Typography>
+
               <TextField className="text-field" size="small" id="standard-basic" label="Full Name" variant="standard" />
               <TextField disabled className="text-field" size="small" id="standard-basic" label="Address" variant="standard" />
               <TextField disabled className="text-field" size="small" id="standard-basic" label="City" variant="standard" />
@@ -102,21 +103,22 @@ const ShoppingCart = () => {
               <Typography>
                 Payment Details
               </Typography>
+
+              <TextField
+                disabled
+                className="text-field"
+                id="standard-disabled"
+                defaultValue="Credit Card #"
+                variant="standard"
+              />
+              <TextField
+                disabled
+                className="text-field"
+                id="standard-disabled"
+                defaultValue="CVV"
+                variant="standard"
+              />
             </div>
-            <TextField
-              disabled
-              className="text-field"
-              id="standard-disabled"
-              defaultValue="Credit Card #"
-              variant="standard"
-            />
-            <TextField
-              disabled
-              className="text-field"
-              id="standard-disabled"
-              defaultValue="CVV"
-              variant="standard"
-            />
           </CardContent>
         </CardContent>
 

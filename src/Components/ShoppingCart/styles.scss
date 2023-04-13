@@ -1,11 +1,11 @@
 .cart-card {
-  margin-top: 10vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2vh;
+  margin: 6vw auto;
   width: 50vw;
-  height: 75vh;
   font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: repeat(3, 1/2fr);
+  row-gap: none;
+  padding-bottom: 2vw;
 }
 
 .order-data {
@@ -14,124 +14,110 @@
 }
 
 .delete-item {
-  position: right;
   right: 2vw;
+  top: -5px;
 }
 
 ul {
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
   height: 12vh;
-  background: color #ffffff;
   overflow-y: auto;
-  border: 1px solid #d1d1d1;
+  overflow-x: hidden;
+  border: 2px solid #d1d1d1;
   border-radius: 3px;
+  padding-left: 0.015vw;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
-  height: 5vh;
+  height: 4vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  left: 0.5vw;
   justify-content: space-between;
+  padding-left: 3vw;
+  padding-top: 14px;
+  background-color: #001667;
+  color: #bedcff;
+}
+
+li:nth-child(2n+1) {
+  background-color: #ebf4ff;
+  color: #00459a;
 }
 
 body,
 ul {
-  margin: 0;
-}
-
-.text-field {
-  margin: auto;
-  width: 17vw;
-  height: 6vh;
-}
-
-.billing-fields {
-  margin-left: 1.4vw;
-}
-
-.payment-details {
-  margin-right: 1.4vw;
-}
-
-.right-column {
-  margin-bottom: 1.25vh;
+  margin: 0 auto;
 }
 
 .form-wrapper {
-  margin-top: 0vh;
-  margin-left: 2vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1vw;
+}
+
+.left-column {
   display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
+
+// Mobile
 @media (orientation: portrait) {
 
   .cart-card {
-    margin-top: 7vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2vh;
-    width: 67vw;
-    height: 80vh;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .order-data {
-    margin-top: 1vh;
-    margin-left: 2.6vw;
+    width: clamp(300px, 45vh, 400px);
+    margin: 12vh auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   ul {
-    height: 10vh;
-    overflow-y: auto;
+    width: fit-content;
   }
-
+  
   li {
-    height: 3vh;
-  }
-
-  body,
-  ul {
-    margin: 0;
-  }
-
-  .text-field {
-    margin: auto;
-    width: 20vw;
-    height: 5vh;
+    height: 4vh;
+    width: 35vh;
+    padding-top: clamp(24px, 3vw, 600px);
+    padding-bottom: clamp(16px, 1vw, 600px);
   }
 
 
+  // Tablet
+  @media (min-width:541px) and (max-width: 1079px) {
 
-  .billing-fields {
-    margin-top: 3vh;
-    margin-left: 4vw;
-    font-weight: 600;
+    .cart-card {
+      width: clamp(600px, 65vw, 800px);
+      grid-template-columns: repeat(1, 1fr);
+      padding-right: clamp(10px, 2vw, 35px);
+    }
+  
+    li {
+      height: 4vh;
+      width: 38vh;
+      padding-top: clamp(10px, 4vw, 28px);
+      padding-bottom: clamp(10px, 2vw, 15px);
+    }  
   }
 
-  .payment-details {
-    margin-top: 3vh;
-    margin-right: 4vw;
-  }
-
-  .right-column {
-    margin-bottom: .6vh;
-  }
-
-  .form-wrapper {
-    display: flex;
-  }
-
-  .button {
-    margin-top: 20vh;
-    margin-left: auto;
-    margin-right: auto;
+  @media (min-width: 1080px){
+    .cart-card {
+      height: clamp(800px, 65vh, 1000px);
+      width: clamp(600px, 65vw, 800px);
+      grid-template-columns: repeat(1, 1fr);
+      padding-right: clamp(40px, 8vh, 70px);
+    }
   }
 
 }
