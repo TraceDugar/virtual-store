@@ -1,3 +1,4 @@
+// Landscape Orientation
 .cart-card {
   margin: 6vw auto;
   width: 50vw;
@@ -73,7 +74,6 @@ ul {
   margin: 0 auto;
 }
 
-
 // Mobile
 @media (orientation: portrait) {
 
@@ -86,18 +86,13 @@ ul {
   ul {
     width: fit-content;
   }
-  
+
   li {
     height: 4vh;
     width: 35vh;
     padding-top: clamp(24px, 3vw, 600px);
     padding-bottom: clamp(16px, 1vw, 600px);
   }
-
-  .right-column {
-    // gap: clamp(25px, 0.5vh, 600px);
-  }
-
 
   // Tablet
   @media (min-width:541px) and (max-width: 1079px) {
@@ -107,16 +102,17 @@ ul {
       grid-template-columns: repeat(1, 1fr);
       padding-right: clamp(10px, 2vw, 35px);
     }
-  
+
     li {
       height: 4vh;
       width: 38vh;
       padding-top: clamp(10px, 4vw, 28px);
       padding-bottom: clamp(10px, 2vw, 15px);
-    }  
+    }
   }
 
-  @media (min-width: 1080px){
+  // Vertical Monitor
+  @media (min-width: 1080px) {
     .cart-card {
       height: clamp(800px, 65vh, 1000px);
       width: clamp(600px, 65vw, 800px);
@@ -124,5 +120,4 @@ ul {
       padding-right: clamp(40px, 8vh, 70px);
     }
   }
-
 }

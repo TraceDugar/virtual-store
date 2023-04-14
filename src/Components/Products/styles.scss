@@ -1,4 +1,4 @@
-// Landscape
+// Landscape Orientation
 .card-container {
   margin-top: 4vw;
   margin-bottom: 10vw;
@@ -9,7 +9,6 @@
   column-gap: 4vw;
   row-gap: 2vw;
 }
-
 
 .card-picture {
   width: clamp(20px, 30vw, 250px);
@@ -53,7 +52,6 @@
   }
 }
 
-
 // Mobile
 @media (orientation: portrait) {
   .card-container {
@@ -80,7 +78,6 @@
     margin-top: 2vh;
   }
 
-
   // Tablet 
   @media (min-width:500px) and (max-width:999px) {
     .card-container {
@@ -101,7 +98,6 @@
       height: clamp(20px, 23vh, 450px);
     }
   }
-
 
   // Vertical Monitor
   @media (min-width:1000px) and (max-width:2000px) {

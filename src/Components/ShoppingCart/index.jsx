@@ -44,7 +44,7 @@ const ShoppingCart = () => {
 
   return (
     <>
-      <Card className="cart-card" style={{  backgroundColor: "F9FBFF", color: "#00459a" }}>
+      <Card className="cart-card" style={{ backgroundColor: "F9FBFF", color: "#00459a" }}>
         <CardContent className="order-data">
           <Typography variant="h5" mb='2vh' >
             Order Summary
